@@ -1,0 +1,27 @@
+ .cc-layer-mask {position: fixed;background:rgba(0,0,0,0.7);width:100%;height:100%;z-index:9999;top:0;left:0;overflow: hidden;}
+   @media \0screen\,screen\9 {/* 只支持IE6、7、8 */
+      .cc-layer-mask{
+	   background-color:#000;
+	   filter:Alpha(opacity=70);
+	  *zoom:1; /* 激活IE6、7的haslayout属性，让它读懂Alpha */
+  }
+}
+.cc-layer {position: fixed;z-index: 10000;width:900px;height:610px;background-color: #f4f4f4;left: 50%;top: 50%;margin-top:-305px;margin-left:-450px;border-radius:3px; overflow: hidden;display: none;}
+.cc-layer .layer-header {height:34px;position: relative;line-height: 34px;color:#000; border: 1px solid #ddd;border-bottom:0;overflow: hidden;}
+.cc-layer .layer-header span {display: inline-block;float: left;font-size:14px;}
+.cc-layer .layer-header em {margin:0px 4px;}
+.cc-layer .layer-header .close-box {position: absolute;top:0px;right:10px;font-size:14px;}
+.cc-layer .layer-header .close-box span {cursor: pointer;}
+.cc-layer .layer-body-wrap {background-color: #f4f4f4;border:1px solid #ddd;padding:0 10px 10px 10px;border-bottom:0;}
+.cc-layer .layer-body {height: 100%; background-color: #fff; overflow: hidden;}
+.cc-layer .layer-footer{width: 100%;}
+.cc-layer .drag {border: 1px solid #ccc;}
+.cc-layer .close-btn {font-size:18px;margin-left:10px;cursor: pointer;}
+.cc-layer .close-btn:HOVER {font-size:22px;}
+.cc-layer a {cursor: pointer;text-decoration: none; }
+.cc-layer .gradient{
+    background:#E6E6E6; /* 一些不支持背景渐变的浏览器 */  
+    background:-moz-linear-gradient(top, #F2F2F2, #E6E6E6);  
+    background:-webkit-gradient(linear, 0 0, 0 bottom, from(#F2F2F2), to(#E6E6E6));  
+    background:-o-linear-gradient(top, #F2F2F2, #E6E6E6); 
+}

@@ -1,0 +1,32 @@
+.category_layer_container{border:1px solid #ccc;padding:6px;border-radius:5px; display: inline-block;display: none;position: absolute;left:2px;top:36px;background-color: #ffffff;z-index:100;}
+.all_category_box{border:1px solid #ccc;margin-top:10px;overflow:auto;font-size:12px;}
+.all_category_box .item {line-height:30px;border-bottom:1px solid #ccc;padding-left:10px;padding-right:10px;}
+.all_category_box .item:hover{background-color: #eeeeee;color:#000000;}
+.all_category_box .item i {
+	position: absolute;
+	left:4px;
+	top:6px;
+	display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-top: 1px;
+    line-height: 14px;
+    vertical-align: text-top;
+    background-image: url("../../img/glyphicons-halflings.png");
+    background-repeat: no-repeat;
+}
+.all_category_box .item .icon-plus {background-position: -408px -96px;}
+.all_category_box .item .icon-minus{background-position: -433px -96px;}
+    
+.all_category_box .item a{cursor: pointer;}
+.all_category_box .item .category_name {padding-left:20px;display: inline-block;position: relative;word-break:keep-all;max-width:600px;}
+.category_layer_container .sel_category_title{line-height: 30px;font-size:14px;margin-top:-6px;border-bottom:1px solid #ccc;}
+.category_box{display:none;}
+.all_category_box .selected{background-color:#0088cc;color:#ffffff;}
+.all_category_box .selected .icon-plus{background:url("/img/plus_white.png");}
+.all_category_box .selected .icon-minus{background:url("/img/minus_white.png");}
+.all_category_box .selected:hover{background-color:#0088cc;color:#ffffff;}
+.all_category_box .clean_pd {padding:0}
+.category_layer_container .btn.disabled {cursor: not-allowed}
+.li_tit{height:36px; line-height:38px; padding-left:15px; background:#F1F1F1; color:#666; font-weight:bold; border:1px solid #E5E5E5; border-bottom:none;}
+
