@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"  version="2.5">
+
+    <!-- 生成视频信息接口 -->
+    <servlet>
+        <servlet-name>createVideoUploadInfo</servlet-name>
+        <servlet-class>com.dreamwin.h5demo.servlet.VideoServlet</servlet-class>
+    </servlet>
+     <servlet-mapping>
+        <servlet-name>createVideoUploadInfo</servlet-name>
+        <url-pattern>/video/createuploadinfo</url-pattern>
+    </servlet-mapping>
+
+    <!-- 获取分类接口 -->
+    <servlet>
+        <servlet-name>categoryInfo</servlet-name>
+        <servlet-class>com.dreamwin.h5demo.servlet.CategoryServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>categoryInfo</servlet-name>
+        <url-pattern>/category/info</url-pattern>
+    </servlet-mapping>
+    
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+
+</web-app>
