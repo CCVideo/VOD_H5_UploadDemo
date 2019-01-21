@@ -1138,7 +1138,7 @@
 				var button = $(e.currentTarget),
 				template = button.closest('.template-upload'),
 				data = template.data('data');
-				if(this.isPaused(dataOptions) || data.uploadStatus !== this.uploadStatusDict.added){
+				if(this.isPaused(data) || data.uploadStatus !== this.uploadStatusDict.added){
 					return;
 				}
 				button.prop('disabled', true);
